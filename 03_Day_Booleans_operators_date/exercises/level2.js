@@ -51,25 +51,36 @@
 
 // 5. Calculate the slope, x-intercept and y-intercept of y = 2x -2
 
+const slope = 2;
+const xIntercept = 1; // x-intercept is 1 (when y = 0)
+const yIntercept = -2; // y-intercept is -2 (when x = 0)
+
+console.log(
+  `Slope: ${slope}, x-intercept: ${xIntercept}, y-intercept: ${yIntercept}`
+);
+
 // 6. slope is m = (y2-y1)/(x2-x1). Find the slope between point (2, 2) and point(6,10)
 
-// let slope = (10 - 2) / (6 - 2);
+let slope2 = (10 - 2) / (6 - 2);
 
-// console.log(slope);
+console.log(slope2);
 
 // 7. Compare the slope of above two questions.
 
+console.log(`Slopes are equal: ${slope === slope2}`);
+
 // 8. Calculate the value of y (y = x2 + 6x + 9). Try to use different x values and figure out at what x value y is 0.
 
-// let x = 0;
-// let y = x * 2 + 6 * x + 9;
+function y(x) {
+  return Math.pow(x, 2) + 6 * x + 9;
+}
 
-// while (y > 0) {
-//   x += 1;
-//   y = x * 2 + 6 * x + 9;
-// }
+let x = -3;
+while (y(x) > 0) {
+  x += 0.1;
+}
 
-// console.log(`The value of x at which y is 0 is: ${x}`);
+console.log(`The value of x where y = 0 is approximately ${x.toFixed(2)}.`);
 
 // 9. Write a script that prompt a user to enter hours and rate per hour. Calculate pay of the person?
 
