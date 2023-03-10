@@ -17,7 +17,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 03 Booleans, Operators, and Dates`: This challenge covers booleans and operators in JavaScript, as well as working with dates.
 - `Day 04 Conditionals`: This challenge covers conditional statements in JavaScript, including if-else statements, switch statements, and ternary operators.
 - `Day 05 Arrays`: This challenge covers arrays in JavaScript, including array methods, iteration, and manipulation.
-<!-- - `Day 06`: Loops -->
+- `Day 06 Loops`: This challenge covers loops in JavaScript, including for loops, while loops, do-while loops, break, and continue statements.
 <!-- - `Day 07`: Functions -->
 <!-- - `Day 08`: Objects -->
 <!-- - `Day 09`: Higher Order Functions -->
