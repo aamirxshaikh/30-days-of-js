@@ -193,3 +193,102 @@ const convertRgbToHexa = (rgb) => {
 };
 
 convertRgbToHexa("rgb(255,0,128)");
+
+// 7. Write a function generateColors which can generate any number of hexa or rgb colors.
+
+const generateColors = (type, noOfColors) => {
+  if (type === "hexa") {
+    const hex = generateHex(noOfColors);
+
+    return hex.length === 1 ? hex.toString() : hex;
+  } else if (type === "rgb") {
+    const rgb = generateRgb(noOfColors);
+
+    return rgb.length === 1 ? rgb.toString() : rgb;
+  } else {
+    return "Invalid choice";
+  }
+};
+
+function generateRgb(noOfColors) {
+  let rgbArr = [];
+
+  for (let i = 0; i < noOfColors; i++) {
+    const r = Math.floor(Math.random() * 256);
+    const g = Math.floor(Math.random() * 256);
+    const b = Math.floor(Math.random() * 256);
+
+    const rgb = `rgb(${r},${g},${b})`;
+
+    rgbArr.push(rgb);
+  }
+
+  return rgbArr;
+}
+
+const generateHex = (noOfColors) => {
+  let hexArr = [];
+
+  const characters = "abcdef0123456789";
+
+  for (let i = 0; i < noOfColors; i++) {
+    let hex = "#";
+
+    while (hex.length < 7) {
+      const randomIndex = Math.floor(Math.random() * characters.length);
+
+      hex += characters[randomIndex];
+    }
+
+    hexArr.push(hex);
+  }
+
+  return hexArr;
+};
+
+console.log(generateColors("hexa", 3)); // ['#a3e12f', '#03ed55', '#eb3d2b']
+console.log(generateColors("hexa", 1)); // '#b334ef'
+console.log(generateColors("rgb", 3)); // ['rgb(5, 55, 175)', 'rgb(50, 105, 100)', 'rgb(15, 26, 80)']
+console.log(generateColors("rgb", 1)); // 'rgb(33,79, 176)'
+
+// 8. Call your function shuffleArray, it takes an array as a parameter and it returns a shuffled array
+
+const shuffleArray = (arr) => {
+  const shuffledArr = [];
+
+  while (arr.length > 0) {
+    const randomIndex = Math.floor(Math.random() * arr.length);
+    const randomElement = arr[randomIndex];
+
+    shuffledArr.push(randomElement);
+    arr.splice(randomIndex, 1);
+  }
+
+  return shuffledArr;
+};
+
+console.log(shuffleArray([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]));
+
+// 9. Call your function factorial, it takes a whole number as a parameter and it return a factorial of the number
+
+const factorial = (number) => {
+  let fact = 1;
+
+  for (let i = number; i > 0; i--) {
+    fact *= i;
+  }
+
+  return fact;
+};
+
+console.log(factorial(10));
+
+// or
+
+const factorial2 = (number) => {
+  if (number === 0) return 1;
+
+  return number * factorial2(number - 1);
+};
+
+console.log(factorial2(5));
