@@ -292,3 +292,264 @@ const factorial2 = (number) => {
 };
 
 console.log(factorial2(5));
+
+// 10. Call your function isEmpty, it takes a parameter and it checks if it is empty or not
+
+const isEmpty = (value) => {
+  if (value === null || value === undefined) {
+    return true;
+  }
+
+  if (typeof value === "string" && value.trim() === "") {
+    return true;
+  }
+
+  if (Array.isArray(value) && value.length === 0) {
+    return true;
+  }
+
+  if (typeof value === "object" && Object.keys(value).length === 0) {
+    return true;
+  }
+
+  return false;
+};
+
+console.log(isEmpty(""));
+
+// 11. Call your function sum, it takes any number of arguments and it returns the sum.
+
+const sum = (...args) => {
+  let sum = 0;
+
+  for (const arg of args) {
+    sum += arg;
+  }
+
+  return sum;
+};
+
+console.log(sum(1, 2, 3, 4, 5, 6));
+
+// 12. Write a function called sumOfArrayItems, it takes an array parameter and return the sum of all the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+const sumOfArrayItems = (arr) => {
+  if (!Array.isArray(arr)) {
+    return "Input is not an array";
+  }
+
+  if (!arr.every((item) => typeof item === "number")) {
+    return "Array contains non-number elements";
+  }
+
+  let sum = 0;
+
+  for (const arg of arr) {
+    sum += arg;
+  }
+
+  return sum;
+};
+
+console.log(sumOfArrayItems([1, 2, 3, 4, 5]));
+
+// 13. Write a function called average, it takes an array parameter and returns the average of the items. Check if all the array items are number types. If not give return reasonable feedback.
+
+const average = (arr) => {
+  if (!Array.isArray(arr)) {
+    return "Input is not an array";
+  }
+
+  if (!arr.every((item) => typeof item === "number")) {
+    return "Array contains non-number elements";
+  }
+
+  let sum = 0;
+
+  for (const arg of arr) {
+    sum += arg;
+  }
+
+  return sum / arr.length;
+};
+
+console.log(average([1, 2, 3, 4, 5]));
+
+// 14. Write a function called modifyArray takes array as parameter and modifies the fifth item of the array and return the array. If the array length is less than five it return 'item not found'.
+
+const modifyArray = (arr) => {
+  if (arr.length < 5) return "Not Found";
+
+  arr.splice(4, 1, arr[4].toUpperCase());
+
+  return arr;
+};
+
+console.log(
+  modifyArray(["Avocado", "Tomato", "Potato", "Mango", "Lemon", "Carrot"])
+);
+console.log(
+  modifyArray(["Google", "Facebook", "Apple", "Amazon", "Microsoft", "IBM"])
+);
+console.log(modifyArray(["Google", "Facebook", "Apple", "Amazon"]));
+
+// 15. Write a function called isPrime, which checks if a number is prime number.
+
+const isPrime = (number) => {
+  if (number <= 1) {
+    return false;
+  }
+
+  for (let j = 2; j <= Math.sqrt(number); ++j) {
+    if (number % j === 0) {
+      return false;
+    }
+  }
+
+  return true;
+};
+
+console.log(isPrime(7));
+
+// 16. Write a functions which checks if all items are unique in the array.
+
+const checkUniqueItems = (arr) => {
+  for (i = 0; i < arr.length; i++) {
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[i] === arr[j]) {
+        return false;
+      }
+    }
+  }
+
+  return true;
+};
+
+console.log(checkUniqueItems([1, 2, 3, 4, 5]));
+
+// or
+
+const checkUniqueItems2 = (arr) => {
+  const uniqueSet = new Set(arr);
+  return arr.length === uniqueSet.size;
+};
+
+console.log(checkUniqueItems2([1, 2, 3, 4, 5, 1]));
+
+// 17. Write a function which checks if all the items of the array are the same data type.
+
+const checkArrSameDatatype = (arr) => {
+  if (
+    arr.every((item) => typeof item === "number") ||
+    arr.every((item) => typeof item === "boolean") ||
+    arr.every((item) => typeof item === "string") ||
+    arr.every((item) => typeof item === "object")
+  ) {
+    return true;
+  }
+
+  return false;
+};
+
+console.log(checkArrSameDatatype([1, 2, 3]));
+
+// or
+
+const checkArrSameDatatype2 = (arr) => {
+  const types = new Set(arr.map((item) => typeof item));
+  return types.size === 1;
+};
+
+console.log(checkArrSameDatatype2([1, 2, 3, true]));
+
+// 18. JavaScript variable name does not support special characters or symbols except $ or _. Write a function isValidVariable which check if a variable is valid or invalid variable.
+
+const isValidVariable = (variable) => {
+  // Check if variable starts with a number
+  if (/^[0-9]/.test(variable)) {
+    return false;
+  }
+
+  // Check if variable contains invalid characters
+  if (/[^a-zA-Z0-9_$]/.test(variable)) {
+    return false;
+  }
+
+  // Check if variable is a reserved keyword
+  const reservedKeywords = [
+    "break",
+    "case",
+    "catch",
+    "class",
+    "const",
+    "continue",
+    "debugger",
+    "default",
+    "delete",
+    "do",
+    "else",
+    "export",
+    "extends",
+    "finally",
+    "for",
+    "function",
+    "if",
+    "import",
+    "in",
+    "instanceof",
+    "let",
+    "new",
+    "return",
+    "super",
+    "switch",
+    "this",
+    "throw",
+    "try",
+    "typeof",
+    "var",
+    "void",
+    "while",
+    "with",
+    "yield",
+  ];
+
+  if (reservedKeywords.includes(variable)) {
+    return false;
+  }
+
+  return true;
+};
+
+console.log(isValidVariable("num"));
+
+// 19. Write a function which returns array of seven random numbers in a range of 0-9. All the numbers must be unique.
+
+const sevenRandomNumbers = () => {
+  let arr = [];
+
+  for (let i = 0; arr.length < 7; i++) {
+    const rand = Math.floor(Math.random() * 10);
+
+    if (!arr.includes(rand)) arr.push(rand);
+  }
+
+  return arr;
+};
+
+console.log(sevenRandomNumbers()); // [(1, 4, 5, 7, 9, 8, 0)]
+
+// 20. Write a function called reverseCountries, it takes countries array and first it copy the array and returns the reverse of the original array
+
+const reverseCountries = (countries) => {
+  const reversedCountries = [];
+
+  for (let i = countries.length - 1; i >= 0; i--) {
+    reversedCountries.push(countries[i]);
+  }
+
+  return reversedCountries;
+};
+
+console.log(
+  reverseCountries(["Finland", "Sweden", "Denmark", "Norway", "Iceland"])
+);
