@@ -154,3 +154,103 @@ const newUser = {
 signUp(newUser);
 
 console.log(users);
+
+// b. Create a function called signIn which allows user to sign in to the application
+
+const signIn = (username, password) => {
+  const user = users.find(
+    (user) => user.username === username && user.password === password
+  );
+
+  if (user) {
+    const loggedInUser = { ...user, isLoggedIn: true };
+
+    console.log('User logged-in.');
+
+    return loggedInUser;
+  } else {
+    console.log('Invalid username or password.');
+
+    return null;
+  }
+};
+
+console.log(signIn('aamir', '789789'));
+
+// 3. The products array has three elements and each of them has six properties.
+
+const products = [
+  {
+    _id: 'eedfcf',
+    name: 'mobile phone',
+    description: 'Huawei Honor',
+    price: 200,
+    ratings: [
+      { userId: 'fg12cy', rate: 5 },
+      { userId: 'zwf8md', rate: 4.5 },
+    ],
+    likes: [],
+  },
+  {
+    _id: 'aegfal',
+    name: 'Laptop',
+    description: 'MacPro: System Darwin',
+    price: 2500,
+    ratings: [],
+    likes: ['fg12cy'],
+  },
+  {
+    _id: 'hedfcg',
+    name: 'TV',
+    description: 'Smart TV:Procaster',
+    price: 400,
+    ratings: [{ userId: 'fg12cy', rate: 5 }],
+    likes: ['fg12cy'],
+  },
+];
+
+// a. Create a function called rateProduct which rates the product
+
+const rateProduct = (productId, userId, rate) => {
+  const product = products.find((p) => p._id === productId);
+
+  if (!product) {
+    console.log('Product not found.');
+    return;
+  }
+
+  const existingRating = product.ratings.find((r) => r.userId === userId);
+
+  if (existingRating) {
+    console.log('User already rated the product.');
+    return;
+  }
+
+  product.ratings.push({ userId, rate });
+  console.log('Product rated successfully.');
+};
+
+rateProduct('hedfcg', 'zwf8md', 2);
+
+console.log(products);
+
+// b. Create a function called averageRating which calculate the average rating of a product
+
+const averageRating = (productId) => {
+  const product = products.find((p) => p._id === productId);
+
+  if (!product || !product.ratings.length) {
+    console.log('Product not found or has no ratings.');
+    return;
+  }
+
+  let max = 0;
+
+  for (const rating of product.ratings) {
+    max += rating.rate;
+  }
+
+  return max / product.ratings.length;
+};
+
+console.log(averageRating('eedfcf'));
