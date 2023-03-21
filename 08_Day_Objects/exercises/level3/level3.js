@@ -254,3 +254,28 @@ const averageRating = (productId) => {
 };
 
 console.log(averageRating('eedfcf'));
+
+// 4. Create a function called likeProduct. This function will helps to like to the product if it is not liked and remove like if it was liked.
+
+const likeProduct = (productId, userId) => {
+  const product = products.find((p) => p._id === productId);
+
+  if (!product) {
+    console.log('Product not found.');
+    return;
+  }
+
+  const userLiked = product.likes.includes(userId);
+
+  if (userLiked) {
+    product.likes.splice(product.likes.indexOf(userId, 1));
+    console.log('Product unliked successfully.');
+  } else {
+    product.likes.push(userId);
+    console.log('Product liked successfully.');
+  }
+};
+
+likeProduct('hedfcg', 'fg12cy');
+
+console.log(products);
