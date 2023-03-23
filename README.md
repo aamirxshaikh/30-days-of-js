@@ -19,7 +19,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 05 Arrays`: This challenge covers arrays in JavaScript, including array methods, iteration, and manipulation.
 - `Day 06 Loops`: This challenge covers loops in JavaScript, including for loops, while loops, do-while loops, break, and continue statements.
 - `Day 07 Functions`: This challenge covers various aspects of functions, including function declaration, function expression, arrow functions, and self-invoking functions. It also covers different types of parameters in functions, including unlimited parameters in regular and arrow functions, default parameters, and anonymous functions.
-<!-- - `Day 08`: Objects -->
+- `Day 08: Objects`: This challenge covers scope and objects in JavaScript, including window global object, global scope, and local scope, creating an empty object, creating an objecting with values, getting values from an object, creating object methods, setting new key for an object, and object methods
 <!-- - `Day 09`: Higher Order Functions -->
 <!-- - `Day 10`: Sets and Maps -->
 <!-- - `Day 11`: Destructuring and Spreading -->
