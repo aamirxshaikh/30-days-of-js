@@ -166,3 +166,36 @@ const allCountriesContainsWordLand = countries.every((country) =>
   country.includes('land')
 );
 console.log(allCountriesContainsWordLand);
+
+// 22. Explain the difference between find and findIndex.
+
+// find returns the actual element that matches the condition,
+// while findIndex returns the index of the element that matches the condition.
+
+// 23. Use find to find the first country containing only six letters in the countries array
+
+const findFirstCountryWith6Letters = countries.find(
+  (country) => country.length === 6
+);
+console.log(findFirstCountryWith6Letters);
+
+// 24. Use findIndex to find the position of the first country containing only six letters in the countries array
+
+const findFirstCountryIndexWith6Letters = countries.findIndex(
+  (country) => country.length === 6
+);
+console.log(findFirstCountryIndexWith6Letters);
+
+// 25. Use findIndex to find the position of Norway if it doesn't exist in the array you will get -1.
+
+const findPositionOfNorway = countries.findIndex(
+  (country) => country === 'Norway'
+);
+console.log(findPositionOfNorway);
+
+// 26. Use findIndex to find the position of Russia if it doesn't exist in the array you will get -1.
+
+const findPositionOfRussia = countries.findIndex(
+  (country) => country === 'Russia'
+);
+console.log(findPositionOfRussia);
