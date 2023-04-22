@@ -23,7 +23,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 09 Higher Order Functions`: This challenge covers the concept of higher-order functions, callbacks, returning functions, setting time using setInterval and setTimeout functions, and functional programming methods such as forEach, map, filter, reduce, every, find, findIndex, some, and sort for string, numeric values, and object arrays.
 - `Day 10 Sets and Maps`: This challenge covers sets and maps, including creating an empty set, creating a set from an array, adding and deleting an element to a set, checking an element in the set, clearing the set, union, intersection, and difference of sets. It also covers creating an empty map, creating a map from an array, adding and getting values from map, and checking keys in map.
 - `Day 11 Destructuring and Spreading`: This challenge covers advanced JavaScript concepts including destructuring arrays and objects, renaming during destructuring, using destructuring during iteration, utilizing the spread or rest operator to copy arrays and objects, and using the spread operator with arrow functions for concise coding.
-<!-- - `Day 12`: Regular Expressions -->
+- `Day 12 Regular Expressions`: This challenge covers creating and working with regular expressions in JavaScript, including creating patterns with RegExp Constructor or without, RegExp parameters such as flags and patterns, using square brackets and escape characters, and working with quantifiers and the caret symbol. It also covers RegExp object methods for testing, matching, and replacing strings.
 <!-- - `Day 13`: Console Object Methods -->
 <!-- - `Day 14`: Error Handling -->
 <!-- - `Day 15`: Classes -->
