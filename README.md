@@ -27,7 +27,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 13 Console Object Methods`: This challenge covers the console object methods in JavaScript, such as logging messages with console.log(), displaying tables with console.table(), measuring code performance with console.time(), and more.
 - `Day 14 Error Handling`: This challenge covers error handling in JavaScript, including error types and handling, try-catch block, and throwing and catching errors.
 - `Day 15 Classes`: This challenge covers creating and instantiating classes in JavaScript, defining constructors, methods, properties with initial values, and using getter, setter, and static methods. It also explores inheritance, including overriding methods.
-<!-- - `Day 16`: JSON -->
+- `Day 16 JSON`: This challenge covers JSON, a lightweight data-interchange format, including converting JSON to JavaScript objects, using a reviver function with JSON.parse(), converting objects to JSON, and using a filter array with JSON.stringify().
 <!-- - `Day 17`: Web Storages -->
 <!-- - `Day 18`: Promises -->
 <!-- - `Day 19`: Closures -->
