@@ -30,7 +30,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 16 JSON`: This challenge covers JSON, a lightweight data-interchange format, including converting JSON to JavaScript objects, using a reviver function with JSON.parse(), converting objects to JSON, and using a filter array with JSON.stringify().
 - `Day 17 Web Storages`: This challenge covers HTML5 Web Storage in JavaScript, covering topics such as sessionStorage and localStorage, setting and getting items from localStorage, and clearing the localStorage for different use cases.
 - `Day 18 Promises`: This challenge covers the fundamental concepts of Promises in JavaScript, including working with callbacks, utilizing the Promise constructor, making use of the Fetch API, and implementing async and await functionality.
-<!-- - `Day 19`: Closures -->
+- `Day 19 Closures`: This challenge covers closures in JavaScript, which allow functions to access variables from their outer functions. 
 <!-- - `Day 20`: Writing Clean Codes -->
 <!-- - `Day 21`: Document Object Model (DOM) -->
 <!-- - `Day 22`: Manipulating DOM Objects -->
