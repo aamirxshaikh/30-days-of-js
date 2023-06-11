@@ -31,7 +31,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 17 Web Storages`: This challenge covers HTML5 Web Storage in JavaScript, covering topics such as sessionStorage and localStorage, setting and getting items from localStorage, and clearing the localStorage for different use cases.
 - `Day 18 Promises`: This challenge covers the fundamental concepts of Promises in JavaScript, including working with callbacks, utilizing the Promise constructor, making use of the Fetch API, and implementing async and await functionality.
 - `Day 19 Closures`: This challenge covers closures in JavaScript, which allow functions to access variables from their outer functions. 
-<!-- - `Day 20`: Writing Clean Codes -->
+- `Day 20 Writing Clean Codes`: This challenge covers JavaScript style guides and coding conventions, including the importance of adhering to a style guide, commonly used style guides like Airbnb, Standard, and Google, and conventions for variables, arrays, functions, loops, objects, conditionals, and classes.
 <!-- - `Day 21`: Document Object Model (DOM) -->
 <!-- - `Day 22`: Manipulating DOM Objects -->
 <!-- - `Day 23`: Event Listeners -->
