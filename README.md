@@ -32,7 +32,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 18 Promises`: This challenge covers the fundamental concepts of Promises in JavaScript, including working with callbacks, utilizing the Promise constructor, making use of the Fetch API, and implementing async and await functionality.
 - `Day 19 Closures`: This challenge covers closures in JavaScript, which allow functions to access variables from their outer functions. 
 - `Day 20 Writing Clean Codes`: This challenge covers JavaScript style guides and coding conventions, including the importance of adhering to a style guide, commonly used style guides like Airbnb, Standard, and Google, and conventions for variables, arrays, functions, loops, objects, conditionals, and classes.
-<!-- - `Day 21`: Document Object Model (DOM) -->
+- `Day 21 Document Object Model (DOM)`: This challenge covers the Document Object Model (DOM) and introduces techniques for working with JavaScript, including getting elements by tag name, class name, or ID, using querySelector methods, adding attributes and classes, adding text content to HTML elements using textContent or innerHTML, and adding styles such as color, background color, and font size.
 <!-- - `Day 22`: Manipulating DOM Objects -->
 <!-- - `Day 23`: Event Listeners -->
 <!-- - `Day 24`: Project Solar System -->
