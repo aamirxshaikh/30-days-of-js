@@ -1,0 +1,23 @@
+.column-container {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+}
+
+.column-container h1 {
+  text-align: center;
+  margin: 0;
+  padding: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.yellow {
+  background-color: yellow;
+}
