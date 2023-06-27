@@ -1,0 +1,14 @@
+.countries-wrapper {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 5px;
+}
+
+.countries-wrapper h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  text-align: center;
+  margin: 0;
+  padding: 30px;
+  border: 1px solid black;
+}
