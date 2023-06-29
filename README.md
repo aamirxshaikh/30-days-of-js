@@ -33,7 +33,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 19 Closures`: This challenge covers closures in JavaScript, which allow functions to access variables from their outer functions. 
 - `Day 20 Writing Clean Codes`: This challenge covers JavaScript style guides and coding conventions, including the importance of adhering to a style guide, commonly used style guides like Airbnb, Standard, and Google, and conventions for variables, arrays, functions, loops, objects, conditionals, and classes.
 - `Day 21 Document Object Model (DOM)`: This challenge covers the Document Object Model (DOM) and introduces techniques for working with JavaScript, including getting elements by tag name, class name, or ID, using querySelector methods, adding attributes and classes, adding text content to HTML elements using textContent or innerHTML, and adding styles such as color, background color, and font size.
-<!-- - `Day 22`: Manipulating DOM Objects -->
+- `Day 22 Manipulating DOM Objects`: This challenge covers the manipulation of Document Object Model (DOM) objects, including creating elements, appending them to parent elements, and removing child elements from parent nodes. It provides hands-on practice in working with the DOM to modify the structure and content of web pages.
 <!-- - `Day 23`: Event Listeners -->
 <!-- - `Day 24`: Project Solar System -->
 <!-- - `Day 25`: World Countries Data Visualization (Part 1) -->
