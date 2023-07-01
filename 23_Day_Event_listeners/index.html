@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body onload="handlePageLoad()">
+    <button>Submit</button>
+    <button onclick="clickMe()">Click Me</button>
+    <button class="dblClick">Double Click Me</button>
+    <button class="mouseEnter">Mouse Enter</button>
+
+    <div id="myElement" onmouseleave="handleMouseLeave()">Mouse Leave Me!</div>
+    <div id="myElement" onmousemove="handleMouseMove()">Move the Mouse!</div>
+    <div id="myElement" onmouseover="handleMouseOver()">Mouse Over Me!</div>
+    <div id="myElement" onmouseout="handleMouseOut()">Mouse Out of Me!</div>
+    <input
+      type="text"
+      id="on-input"
+      placeholder="handleOnInput"
+      oninput="handleOnInput()"
+    />
+    <input
+      type="text"
+      id="on-change"
+      placeholder="handleOnChange"
+      onchange="handleOnChange()"
+    />
+    <input
+      type="text"
+      id="on-blur"
+      placeholder="handleInputBlur"
+      onblur="handleInputBlur()"
+    />
+    <input
+      type="text"
+      placeholder="handleKeyDown"
+      onkeydown="handleKeyDown()"
+    />
+    <input type="text" placeholder="handleKeyUp" onkeyup="handleKeyUp()" />
+    <input
+      type="text"
+      placeholder="handleKeyPress"
+      onkeypress="handleKeyPress()"
+    />
+
+    <input type="text" id="mass" placeholder="Mass in Kilogram" />
+    <input type="text" id="height" placeholder="Height in meters" />
+    <button id="bmi">Calculate BMI</button>
+
+    <input type="text" id="say-something" placeholder="say something" />
+    <p></p>
+    <script src="eventListeners.js"></script>
+  </body>
+</html>
