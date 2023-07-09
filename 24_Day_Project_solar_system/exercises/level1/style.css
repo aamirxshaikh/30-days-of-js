@@ -1,0 +1,8 @@
+option {
+  text-transform: uppercase;
+}
+
+.error-text {
+  color: red;
+  margin-top: 5px;
+}
