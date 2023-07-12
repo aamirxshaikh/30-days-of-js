@@ -35,7 +35,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 21 Document Object Model (DOM)`: This challenge covers the Document Object Model (DOM) and introduces techniques for working with JavaScript, including getting elements by tag name, class name, or ID, using querySelector methods, adding attributes and classes, adding text content to HTML elements using textContent or innerHTML, and adding styles such as color, background color, and font size.
 - `Day 22 Manipulating DOM Objects`: This challenge covers the manipulation of Document Object Model (DOM) objects, including creating elements, appending them to parent elements, and removing child elements from parent nodes. It provides hands-on practice in working with the DOM to modify the structure and content of web pages.
 - `Day 23 Event Listeners`: This challenge covers the implementation of event listeners in the Document Object Model (DOM), including handling click, double click, and mouse enter events. It also explores retrieving values from input elements, handling input events, blur events, and keyboard events such as keypress, keydown, and keyup. It provides hands-on practice in adding interactivity to web pages through event-driven programming.
-<!-- - `Day 24`: Project Solar System -->
+- `Day 24 Project Solar System`: This challenge focuses on developing a small application that calculates the weight of an object on a specific planet within the solar system.
 <!-- - `Day 25`: World Countries Data Visualization (Part 1) -->
 <!-- - `Day 26`: World Countries Data Visualization (Part 2) -->
 <!-- - `Day 27`: Mini Project: Portfolio -->
