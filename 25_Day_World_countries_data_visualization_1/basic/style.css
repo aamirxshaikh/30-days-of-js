@@ -1,0 +1,27 @@
+option {
+  text-transform: uppercase;
+}
+
+.error-text {
+  color: red;
+  margin-top: 5px;
+}
+
+.graphs {
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bar-chart {
+  display: inline-block;
+  height: 30px;
+  background-color: yellow;
+}
+
+#stat {
+  display: grid;
+  grid-template-columns: auto auto auto; /* Adjust the number of columns as needed */
+  column-gap: 10px; /* Adjust the spacing between columns */
+}
