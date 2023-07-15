@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin: 0;
+}
+
+#total-countries {
+  font-weight: bold;
+}
+
+#buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#graph-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#graph-title {
+  margin-top: 0;
+}
+
+#graph {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+#feedback {
+  text-align: center;
+  margin-bottom: 20px;
+}
