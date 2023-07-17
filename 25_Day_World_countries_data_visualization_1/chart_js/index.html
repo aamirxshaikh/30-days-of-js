@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>World Countries Data</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>World Countries Data</h1>
+      <p id="total-countries">
+        Total Countries: <span id="country-count"></span>
+      </p>
+    </header>
+
+    <div id="buttons">
+      <button id="population-btn">Population</button>
+      <button id="languages-btn">Languages</button>
+    </div>
+
+    <div id="graph-container">
+      <h2 id="graph-title"></h2>
+      <canvas id="graph"></canvas>
+      <!-- Add this line -->
+    </div>
+
+    <div id="feedback"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="countries.js"></script>
+    <script src="level1.js"></script>
+  </body>
+</html>
