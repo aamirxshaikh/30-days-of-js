@@ -36,7 +36,7 @@ This repository contains my solutions for the 30 Days of JavaScript coding chall
 - `Day 22 Manipulating DOM Objects`: This challenge covers the manipulation of Document Object Model (DOM) objects, including creating elements, appending them to parent elements, and removing child elements from parent nodes. It provides hands-on practice in working with the DOM to modify the structure and content of web pages.
 - `Day 23 Event Listeners`: This challenge covers the implementation of event listeners in the Document Object Model (DOM), including handling click, double click, and mouse enter events. It also explores retrieving values from input elements, handling input events, blur events, and keyboard events such as keypress, keydown, and keyup. It provides hands-on practice in adding interactivity to web pages through event-driven programming.
 - `Day 24 Project Solar System`: This challenge focuses on developing a small application that calculates the weight of an object on a specific planet within the solar system.
-<!-- - `Day 25`: World Countries Data Visualization (Part 1) -->
+- `Day 25 World Countries Data Visualization (Part 1)`: This challenge dives into the visualization of data by using DOM to display the ten most populated countries and the ten most spoken languages in the world. It involves fetching country information from the provided countries.js array of objects and dynamically presenting the data in a visually appealing bar graph format.
 <!-- - `Day 26`: World Countries Data Visualization (Part 2) -->
 <!-- - `Day 27`: Mini Project: Portfolio -->
 <!-- - `Day 28`: Mini Project: Leaderboard -->
