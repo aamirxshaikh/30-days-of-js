@@ -1,0 +1,51 @@
+.feedback-containing {
+  display: none;
+}
+
+.active {
+  padding: 5px;
+  background-color: #ff0000; /* Add your desired styling for the active state */
+  color: #ffffff;
+}
+
+.countries-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: -10px; /* Add negative margin to counteract the margin on the boxes */
+}
+
+.box {
+  position: relative;
+  max-width: calc(
+    16.666% - 20px
+  ); /* Adjust the max-width according to your needs */
+  padding: 20px;
+  margin: 10px; /* Adjust the margin to create spacing between the boxes */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.box-content {
+  position: relative;
+  text-align: center;
+}
+
+.box img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.box p {
+  font-weight: bold;
+  text-transform: uppercase;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 10px;
+}
