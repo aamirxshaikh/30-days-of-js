@@ -1,0 +1,81 @@
+/* styles.css */
+
+/* Set up basic styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+/* Search container styles */
+.search-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input[type='text'] {
+  flex-grow: 1;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+
+button.active {
+  background-color: #45a049;
+}
+
+/* Feedback section styles */
+#feedback {
+  margin-bottom: 10px;
+}
+
+/* Search results container styles */
+#results-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.country-box {
+  width: 200px;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.country-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+button.active {
+  background-color: #3b853f;
+}
+
+button#order-btn::before {
+  content: '\25B2 '; /* Upward triangle */
+}
+
+button#order-btn.asc::before {
+  content: '\25B2 '; /* Upward triangle */
+}
+
+button#order-btn.desc::before {
+  content: '\25BC'; /* Downward triangle */
+}
