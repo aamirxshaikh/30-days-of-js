@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>World Countries Data</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h2>World Countries List</h2>
+      <p class="subtitle">
+        Total Number of countries: <span class="total-countries"></span>
+      </p>
+      <p class="feedback-start-with">
+        Countries starting with <span class="s-word"></span> are
+        <span class="s-number"></span>
+      </p>
+      <p class="feedback-containing">
+        Countries containing <span class="c-word"></span> are
+        <span class="c-number"></span>
+      </p>
+    </header>
+    <main>
+      <div class="wrapper">
+        <div class="graph-buttons">
+          <button class="starting-word">Starting word</button>
+          <button class="any-word">Search with any word</button>
+          <button class="reverse">Reverse</button>
+        </div>
+        <input class="input" type="text" placeholder="Search country" />
+        <div class="countries-container"></div>
+      </div>
+    </main>
+    <script src="countries.js"></script>
+    <script src="level1.js"></script>
+  </body>
+</html>
